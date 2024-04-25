@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 async function getAndroidVersionFromGooglePlay(packageName) {
-    const response = {}; // Initialize an object to store the response
+    const response = {}; 
 
     try {
         const responseFromPlayStore = await axios.get(`https://play.google.com/store/apps/details?id=${packageName}`);
